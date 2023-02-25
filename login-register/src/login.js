@@ -19,7 +19,7 @@ return(
             <input value={pass} onChange={(e)=> setPass(e.target.value)} type="password" placeholder="********" name="password" id="password"/>
             <button type="submit">Login</button>
         </form>
-        <button className="togglebtn" onClick={()=>props.ontoggle("register")}>Don't have an account? Register here.</button>
+        <button className="togglebtn" >Don't have an account?<span className="clklogin" onClick={()=>props.ontoggle("register")}> Register here.</span></button>
     </div>
 )
 }

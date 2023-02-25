@@ -14,7 +14,7 @@ export const Register = (props)=>{
       
 
     return(
-        <div className=".wrapper">
+        <div className="main">
         <form className="register" onSubmit={handlesubmit}>
         <label htmlFor="name">Email</label>
             <input value={name} onChange={(e)=> setName(e.target.value)} type="name" placeholder="Full name" name="name" id="name"/>
@@ -24,7 +24,7 @@ export const Register = (props)=>{
             <input value={pass} onChange={(e)=> setPass(e.target.value)} type="password" placeholder="********" name="password" id="password"/>
             <button type="submit">Register</button>
         </form>
-        <button className="togglebtn" onClick={()=>props.ontoggle("login")}>Already have an account? Login here.</button>
+        <button className="togglebtn" >Already have an account? <span className="clklogin" onClick={()=>props.ontoggle("login")}> Login here.</span></button>
         </div>
     )
 }
