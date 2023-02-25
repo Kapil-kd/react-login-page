@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #fddb92ad , #d1fdffc9 );
+}
+.wrapper,
+.login,
+.register {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  text-align: left;
+  padding: 15px 0px;
+  font-size: 19px;
+}
+input {
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  padding: 15px;
+  height: 17px;
+  width: 300px;
+  font-size: 17px;
+}
+
+.togglebtn {
+  margin: 20px;
+  border: none;
+  padding: 13px;
+  background:none;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+form button{
+  margin: 20px;
+  border: none;
+  padding: 13px;
+  font-size: 17px;
+  background-color: rgba(9, 220, 23, 0.676);
+  border-radius: 20px;
+  cursor: pointer;
+}
